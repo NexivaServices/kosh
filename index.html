@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kosh: ID & Document Wallet</title>
+<meta name="description" content="Kosh keeps your ID cards, licences, insurance and health cards encrypted on your Android phone. Offline, no account.">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --ink: #17161c; --muted: #5d5a63; --line: #e4e1da; --bg: #faf9f6; --card: #ffffff; --accent: #4a44c9; --gold: #f0a83b; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #f3f1ec; --muted: #b3afb8; --line: #34323a; --bg: #17161c; --card: #201f26; --accent: #9d98ff; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { display: flex; gap: 18px; align-items: center; }
+  header img { width: 72px; height: 72px; border-radius: 18px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0; }
+  .tag { color: var(--muted); margin: 4px 0 0; }
+  .cta { display: inline-block; margin-top: 24px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; padding: 12px 20px; border-radius: 12px; }
+  h2 { font-size: 19px; margin: 36px 0 10px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
+  .card strong { display: block; margin-bottom: 2px; }
+  .card span { color: var(--muted); font-size: 15px; }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <img src="icon.png" alt="">
+  <div>
+    <h1>Kosh</h1>
+    <p class="tag">Your ID cards and documents, encrypted on your phone. Offline. No account.</p>
+  </div>
+</header>
+<a class="cta" href="https://play.google.com/store/apps/details?id=com.nexivaservices.kosh">Get it on Google Play</a>
+
+<h2>What it does</h2>
+<div class="grid">
+  <div class="card"><strong>Scan once</strong><span>Kosh crops the card and reads the name, number and dates for you.</span></div>
+  <div class="card"><strong>The right card, right away</strong><span>Licence and vehicle papers when you drive, health cards near a hospital.</span></div>
+  <div class="card"><strong>Never miss a renewal</strong><span>Reminders before documents, insurance and services expire.</span></div>
+  <div class="card"><strong>For the whole family</strong><span>Cards and vehicles for everyone at home, with emergency info on the lock screen.</span></div>
+  <div class="card"><strong>Share only what's needed</strong><span>Stamped copies and masked numbers, so a copy can't be reused.</span></div>
+  <div class="card"><strong>Private by design</strong><span>Encrypted behind your fingerprint or PIN. No cloud copy, no ads.</span></div>
+</div>
+
+<h2>Help</h2>
+<p><strong>Kosh says "Set a screen lock".</strong> Kosh's encryption key is protected by your phone's screen lock. Add a PIN, pattern or fingerprint in Android Settings → Security.</p>
+<p><strong>New phone.</strong> Make an encrypted backup in Kosh (Settings → Backup), move the file to the new phone, install Kosh and restore it with your passphrase.</p>
+<p><strong>Emergency info doesn't show on the lock screen.</strong> Fill in your blood group, allergies or an emergency contact under Settings → your profile, and allow Kosh's notifications. Some phones also need "Show all notification content" on the lock screen.</p>
+<p><strong>Anything else.</strong> Write to <a href="mailto:mail@nexivaservices.com">mail@nexivaservices.com</a>.</p>
+
+<footer>
+  <a href="privacy/">Privacy policy</a> · Kosh is an independent app by <a href="https://www.nexivaservices.com">Nexiva Services</a>. It isn't affiliated with any government, or with UIDAI, DigiLocker or Parivahan.
+</footer>
+</main>
+</body>
+</html>

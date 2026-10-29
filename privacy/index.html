@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kosh privacy policy</title>
+<style>
+  :root { --ink: #17161c; --muted: #5d5a63; --line: #e4e1da; --bg: #faf9f6; --accent: #4a44c9; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #f3f1ec; --muted: #b3afb8; --line: #34323a; --bg: #17161c; --accent: #9d98ff; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  p, li { color: var(--ink); }
+  .muted { color: var(--muted); }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--line); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>Kosh privacy policy</h1>
+<p class="muted">Effective 29 October 2026 · Kosh for Android, published by Nexiva Services</p>
+
+<p>Kosh is a wallet for your ID cards and documents that keeps everything on your phone. It has no account, no cloud copy of your documents and no ads. This policy explains what stays on your phone, the few things that leave it, and why.</p>
+
+<h2>What Kosh keeps on your phone</h2>
+<p>The documents you add (photos, scans and PDFs), the details read from them or typed in (names, numbers, dates, addresses), family members, vehicles and service logs, emergency information and your settings.</p>
+<p>All of this is stored in Kosh's private storage, encrypted with AES-256-GCM. The encryption key is itself locked by the Android Keystore and can only be used right after you unlock Kosh with your fingerprint or your phone's PIN, pattern or password. Android's cloud backup is turned off for Kosh, so none of this is copied to Google Drive.</p>
+<p>If you turn on <em>Emergency info on lock screen</em>, that information (and only that: your name, blood group, allergies, conditions, medication and emergency contacts) is shown on your phone's lock screen as a notification, so whoever helps you can read it without unlocking. To show it again after the phone restarts, Kosh keeps that text outside the vault. Anyone holding your phone can see it, which is the point. Turning the setting off removes it.</p>
+<p>The home-screen widget shows no documents or personal details, only shortcuts. Every one of them opens Kosh, which still asks you to unlock it.</p>
+<p>Reading your documents (text recognition, barcode reading, and the optional voice and AI features) happens on your phone. Your documents, their text and your voice are never sent to us or to anyone else by Kosh.</p>
+
+<h2>What leaves your phone, and when</h2>
+<table>
+  <tr><th>What</th><th>Sent to</th><th>When, and why</th></tr>
+  <tr>
+    <td>A rough location: your position rounded to about 100 metres</td>
+    <td>The OpenStreetMap Overpass service (overpass-api.de)</td>
+    <td>Only while <em>Health cards near hospitals</em> is turned on, when you open Kosh: at most every couple of minutes, and a recent answer is reused for 15 minutes while you stay within about 300 m. It is used to check whether a hospital or clinic is within 250 m so Kosh can put your health cards first. You can turn this off in Settings at any time.</td>
+  </tr>
+  <tr>
+    <td>Diagnostics: phone model and Android version, app version, how long text and barcode reading took, error codes, and an installation identifier that isn't meant to identify you or your phone</td>
+    <td>Google (ML Kit)</td>
+    <td>Sent by Google's ML Kit, the on-device text and barcode recognition Kosh uses, for Google's diagnostics and usage analytics. It doesn't include your documents, their text, or your name. Google encrypts it in transit and doesn't pass it to third parties. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google's ML Kit data disclosure</a>.</td>
+  </tr>
+  <tr>
+    <td>Requests to download a model file (your IP address and the file name, as with any download)</td>
+    <td>Hugging Face (huggingface.co)</td>
+    <td>Only when you choose to download the optional voice or on-device AI pack in Settings.</td>
+  </tr>
+</table>
+<p>Some features use Google Play services on your phone: the document scanner, activity recognition (to notice when you're driving, if you turn that on), location, and app updates. Kosh keeps only the result it needs, such as the time you last started or stopped driving. These services are governed by <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+
+<h2>What you choose to share</h2>
+<p>Kosh sends nothing on your behalf. When you tap <em>Share</em>, <em>Share a stamped copy</em>, <em>Create backup</em> or <em>Add to calendar</em>, Android hands what you picked to the app you choose (a messaging app, email, files, your calendar). From then on, that app's privacy policy applies.</p>
+<ul>
+  <li><strong>Stamped copies</strong> carry a watermark with the purpose and the date.</li>
+  <li><strong>Shared details</strong> are only the ones you tick, and the number can go out with only its last 4 characters.</li>
+  <li><strong>Backups</strong> are encrypted with a passphrase you set. We can't open them.</li>
+  <li><strong>Calendar events</strong> contain the card's name and its expiry date, never its number. Your calendar app may sync them to its own cloud.</li>
+</ul>
+<p>Links you tap (for example DigiLocker, Parivahan or e-Challan) open in your browser. Kosh is not affiliated with those services or with any government.</p>
+
+<h2>Permissions</h2>
+<ul>
+  <li><strong>Location</strong> (optional): driving speed and the hospital check above.</li>
+  <li><strong>Physical activity</strong> (optional): notices when you're in a vehicle, so your licence and vehicle papers come first.</li>
+  <li><strong>Microphone</strong> (optional): voice search, transcribed on your phone.</li>
+  <li><strong>Notifications</strong>: expiry and service reminders, scheduled on your phone.</li>
+  <li><strong>Biometrics</strong>: unlocking Kosh.</li>
+  <li><strong>Camera</strong>: Kosh doesn't ask for it. Scanning goes through Google's document scanner, which uses the camera for Kosh and returns only the pages you keep.</li>
+</ul>
+
+<h2>What we collect</h2>
+<p>We, the developer, don't run servers for Kosh and don't receive your documents, your details, your location or any analytics from the app. We have no copy of your data to hand over, sell or lose.</p>
+
+<h2>Keeping and deleting your data</h2>
+<p>Your data stays on your phone until you delete it. You can delete single cards in Kosh, erase everything with <em>Settings → Erase all data</em>, or uninstall Kosh. There's no account to close and no copy held anywhere else, except backups you created yourself.</p>
+
+<h2>Children</h2>
+<p>Kosh is meant for adults managing their own and their family's documents. It isn't directed at children under 13, and we don't knowingly collect any information from children.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted here with a new effective date, and significant changes will be noted in the app's release notes.</p>
+
+<h2>Contact</h2>
+<p>Questions about privacy in Kosh: <a href="mailto:mail@nexivaservices.com">mail@nexivaservices.com</a></p>
+</main>
+</body>
+</html>
